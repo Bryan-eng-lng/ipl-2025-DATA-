@@ -1,0 +1,165 @@
+print("These are the IPL 2025 matches list:")
+for i, m in enumerate(sorted(ipl_matches), start=1):
+    print(f"{i}. {m}")
+print()
+
+
+def normalize(s: str) -> str:
+    return " ".join(s.strip().upper().split())
+
+while True:
+    match = normalize(input('Enter match (e.g. RCB vs KKR): '))
+
+    if match == "RR VS PBKS" or match == "PBKS VS RR":
+        print("There are 2 matches happened between RR & PBKS in 2025 IPL. 1st Match: RR won by 50 runs, 2nd Match: PBKS won by 10 runs")
+
+    elif match == "CSK VS DC" or match == "DC VS CSK":
+        print("Only 1 match happened between CSK & DC in 2025 IPL. DC Won by 25 Runs")
+
+    elif match == "CSK VS GT" or match == "GT VS CSK":
+        print("Only 1 match happened between CSK & GT in 2025 IPL. CSK Won by 83 Runs")
+
+    elif match == "CSK VS KKR" or match == "KKR VS CSK":
+        print("There are 2 matches happened between CSK & KKR in 2025 IPL. 1st Match: KKR Won by 8 Wickets, 2nd Match: CSK Won by 2 Wickets")
+
+    elif match == "CSK VS LSG" or match == "LSG VS CSK":
+        print("Only 1 match happened between CSK & LSG in 2025 IPL. CSK Won by 5 Wickets")
+
+    elif match == "CSK VS MI" or match == "MI VS CSK":
+        print("There are 2 matches happened between CSK & MI in 2025 IPL. 1st Match: CSK Won by 4 Wickets, 2nd Match: MI Won by 9 Wickets")
+
+    elif match == "CSK VS PBKS" or match == "PBKS VS CSK":
+        print("There are 2 matches happened between CSK & PBKS in 2025 IPL. 1st Match: PBKS Won by 18 Runs, 2nd Match: PBKS Won by 4 Wickets")
+
+    elif match == "CSK VS RCB" or match == "RCB VS CSK":
+        print("There are 2 matches happened between CSK & RCB in 2025 IPL. 1st Match: RCB Won by 50 Runs, 2nd Match: RCB Won by 2 Runs")
+
+    elif match == "CSK VS RR" or match == "RR VS CSK":
+        print("There are 2 matches happened between CSK & RR in 2025 IPL. 1st Match: RR Won by 6 Runs, 2nd Match: RR Won by 6 Wickets")
+
+    elif match == "CSK VS SRH" or match == "SRH VS CSK":
+        print("Only 1 match happened between CSK & SRH in 2025 IPL. SRH Won by 5 Wickets")
+
+    elif match == "DC VS GT" or match == "GT VS DC":
+        print("There are 2 matches happened between DC & GT in 2025 IPL. 1st Match: GT Won by 7 Wickets, 2nd Match: GT Won by 10 Wickets")
+
+    elif match == "DC VS KKR" or match == "KKR VS DC":
+        print("Only 1 match happened between DC & KKR in 2025 IPL. KKR Won by 14 Runs")
+
+    elif match == "DC VS LSG" or match == "LSG VS DC":
+        print("There are 2 matches happened between DC & LSG in 2025 IPL. 1st Match: DC Won by 1 Wicket, 2nd Match: DC Won by 8 Wickets")
+
+    elif match == "DC VS MI" or match == "MI VS DC":
+        print("There are 2 matches happened between DC & MI in 2025 IPL. 1st Match: MI Won by 12 Runs, 2nd Match: MI Won by 59 Runs")
+
+    elif match == "DC VS PBKS" or match == "PBKS VS DC":
+        print("Only 1 match happened between DC & PBKS in 2025 IPL. PBKS Won by 201/4 (No result line)")
+
+    elif match == "DC VS RCB" or match == "RCB VS DC":
+        print("Only 1 match happened between DC & RCB in 2025 IPL. RCB Won by 6 Wickets")
+
+    elif match == "DC VS RR" or match == "RR VS DC":
+        print("There are 2 matches happened between DC & RR in 2025 IPL. 1st Match: Tie (DC won Super Over), 2nd Match: RR Won by 8 Wickets")
+
+    elif match == "DC VS SRH" or match == "SRH VS DC":
+        print("There are 2 matches happened between DC & SRH in 2025 IPL. 1st Match: No Result, 2nd Match: DC Won by 7 Wickets")
+
+    elif match == "GT VS KKR" or match == "KKR VS GT":
+        print("Only 1 match happened between GT & KKR in 2025 IPL. KKR Won by 80 Runs")
+
+    elif match == "GT VS LSG" or match == "LSG VS GT":
+        print("There are 2 matches happened between GT & LSG in 2025 IPL. 1st Match: LSG Won by 6 Wickets, 2nd Match: LSG Won by 33 Runs")
+
+    elif match == "GT VS MI" or match == "MI VS GT":
+        print("There are 3 matches happened between GT & MI in 2025 IPL. 1st Match: GT Won by 36 Runs, 2nd Match: GT Won by 3 Wickets (D/L Method), 3rd Match: MI Won by 20 Runs (Qualified)")
+
+    elif match == "GT VS PBKS" or match == "PBKS VS GT":
+        print("Only 1 match happened between GT & PBKS in 2025 IPL. PBKS Won by 11 Runs")
+
+    elif match == "GT VS RCB" or match == "RCB VS GT":
+        print("Only 1 match happened between GT & RCB in 2025 IPL. GT Won by 8 Wickets")
+
+    elif match == "GT VS RR" or match == "RR VS GT":
+        print("Only 1 match happened between GT & RR in 2025 IPL. RR Won by 209/7 (no clear margin in text)")
+
+    elif match == "KKR VS PBKS" or match == "PBKS VS KKR":
+        print("There are 2 matches happened between KKR & PBKS in 2025 IPL. 1st Match: PBKS Won by 16 Runs, 2nd Match: Abandoned (No Result)")
+
+    elif match == "KKR VS RCB" or match == "RCB VS KKR":
+        print("There are 2 matches happened between KKR & RCB in 2025 IPL. 1st Match: RCB Won by 7 Wickets, 2nd Match: Abandoned (No Result)")
+
+    elif match == "KKR VS SRH" or match == "SRH VS KKR":
+        print("There are 2 matches happened between KKR & SRH in 2025 IPL. 1st Match: KKR Won by 80 Runs, 2nd Match: SRH Won by 110 Runs")
+
+    elif match == "LSG VS MI" or match == "MI VS LSG":
+        print("Only 1 match happened between LSG & MI in 2025 IPL. MI Won by 54 Runs")
+
+    elif match == "LSG VS PBKS" or match == "PBKS VS LSG":
+        print("There are 2 matches happened between LSG & PBKS in 2025 IPL. 1st Match: PBKS Won by 37 Runs, 2nd Match: LSG Won by 6 Wickets")
+
+    elif match == "LSG VS RCB" or match == "RCB VS LSG":
+        print("Only 1 match happened between LSG & RCB in 2025 IPL. RCB Won by 6 Wickets")
+
+    elif match == "LSG VS RR" or match == "RR VS LSG":
+        print("There are 2 matches happened between LSG & RR in 2025 IPL. 1st Match: LSG Won by 2 Runs, 2nd Match: RR Won by 2 Wickets")
+
+    elif match == "MI VS PBKS" or match == "PBKS VS MI":
+        print("There are 3 matches happened between MI & PBKS in 2025 IPL. 1st Match: MI Won by 12 Runs, 2nd Match: PBKS Won by 7 Wickets, 3rd Match: PBKS Won by 5 Wickets")
+
+    elif match == "MI VS RCB" or match == "RCB VS MI":
+        print("Only 1 match happened between MI & RCB in 2025 IPL. RCB Won by 12 Runs")
+
+    elif match == "PBKS VS RCB" or match == "RCB VS PBKS":
+        print("There are 4 matches happened between PBKS & RCB in 2025 IPL. 1st Match: PBKS Won by 5 Wickets, 2nd Match: RCB Won by 7 Wickets, 3rd Match: RCB Won by 8 Wickets (Qualifier), 4th Match: RCB Won by 6 Runs (Final)")
+
+    elif match == "PBKS VS SRH" or match == "SRH VS PBKS":
+        print("Only 1 match happened between PBKS & SRH in 2025 IPL. PBKS Won by 245/6 (match line)")
+
+    elif match == "RR VS GT" or match == "GT VS RR":
+        print("Only 1 match happened between RR & GT in 2025 IPL. GT Won by 38 Runs")
+
+    elif match == "RR VS KKR" or match == "KKR VS RR":
+        print("There are 2 matches happened between RR & KKR in 2025 IPL. 1st Match: KKR Won by 8 Wickets, 2nd Match: KKR Won by 1 Run")
+
+    elif match == "SRH VS DC" or match == "DC VS SRH":
+        print("There are 2 matches happened between SRH & DC in 2025 IPL. 1st Match: No Result, 2nd Match: DC Won by 7 Wickets")
+
+    elif match == "SRH VS GT" or match == "GT VS SRH":
+        print("There are 2 matches happened between SRH & GT in 2025 IPL. 1st Match: GT Won by 7 Wickets, 2nd Match: GT Won by 38 Runs")
+
+    elif match == "SRH VS PBKS" or match == "PBKS VS SRH":
+        print("Only 1 match happened between SRH & PBKS in 2025 IPL. SRH Won by 155/5 (match data)")
+
+    elif match == "SRH VS RCB" or match == "RCB VS SRH":
+        print("Only 1 match happened between SRH & RCB in 2025 IPL. SRH Won by 42 Runs")
+
+    elif match == "SRH VS RR" or match == "RR VS SRH":
+        print("Only 1 match happened between SRH & RR in 2025 IPL. SRH Won by 44 Runs")
+
+    elif match == "DC VS LSG" or match == "LSG VS DC":
+        print("There are 2 matches happened between DC & LSG in 2025 IPL. 1st Match: DC Won by 1 Wicket, 2nd Match: DC Won by 8 Wickets")
+
+    elif match == "ELIMINATOR":
+        print("Eliminator: MI vs GT. MI won by 20 Runs and qualified.")
+
+    elif match == "QUALIFIER 1":
+        print("Qualifier 1: RCB vs PBKS. RCB won by 8 Wickets and qualified for the Final.")
+
+    elif match == "QUALIFIER 2":
+        print("Qualifier 2: PBKS vs MI. PBKS won by 5 Wickets and qualified for the Final.")
+
+    elif match == "FINAL" or match == "RCB VS PBKS" or match == "PBKS VS RCB":
+        print("FINAL: RCB vs PBKS. RCB won the Final by 6 Runs. Congratulations RCB - IPL 2025 Champions")
+
+    else:
+        print("Match data not available. Please check team names or spelling.")
+
+    user_input = input("\nDo you want another match result? (yes/no): ").strip().lower()
+    if user_input == "no":
+        print("Thank you")
+        break
+    
+
+
+        
+
